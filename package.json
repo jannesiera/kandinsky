@@ -1,0 +1,25 @@
+{
+  "name": "kandinsky",
+  "version": "0.0.1",
+  "description": "An Entity Component System",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jannesiera/kandinsky.git"
+  },
+  "keywords": [
+    "entity",
+    "component",
+    "system",
+    "ecs"
+  ],
+  "author": "Janne Siera <janne@siera.be> (http://twitter.com/jannesiera)",
+  "license": "GNU GPL v2.0",
+  "bugs": {
+    "url": "https://github.com/jannesiera/kandinsky/issues"
+  },
+  "homepage": "https://github.com/jannesiera/kandinsky"
+}
