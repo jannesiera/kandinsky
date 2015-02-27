@@ -1,6 +1,6 @@
 {
   "name": "kandinsky",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "An Entity Component System",
   "main": "index.js",
   "scripts": {
