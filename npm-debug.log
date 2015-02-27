@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Programs\\nodejs\\\\node.exe',
+1 verbose cli   'D:\\Programs\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.6.1
+3 info using node@v0.10.28
+4 verbose node symlink D:\Programs\nodejs\\node.exe
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: 'D:\\Game development\\kandinsky',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory C:\Users\Janne\AppData\Roaming\npm-cache\kandinsky\0.0.1\package.tgz not in flight; packing
+10 verbose tar pack [ 'C:\\Users\\Janne\\AppData\\Roaming\\npm-cache\\kandinsky\\0.0.1\\package.tgz',
+10 verbose tar pack   'D:\\Game development\\kandinsky' ]
+11 verbose tarball C:\Users\Janne\AppData\Roaming\npm-cache\kandinsky\0.0.1\package.tgz
+12 verbose folder D:\Game development\kandinsky
+13 info prepublish kandinsky@0.0.1
+14 verbose addLocalTarball adding from inside cache C:\Users\Janne\AppData\Roaming\npm-cache\kandinsky\0.0.1\package.tgz
+15 silly cache afterAdd kandinsky@0.0.1
+16 verbose afterAdd C:\Users\Janne\AppData\Roaming\npm-cache\kandinsky\0.0.1\package\package.json not in flight; writing
+17 verbose afterAdd C:\Users\Janne\AppData\Roaming\npm-cache\kandinsky\0.0.1\package\package.json written
+18 silly publish { name: 'kandinsky',
+18 silly publish   version: '0.0.1',
+18 silly publish   description: 'An Entity Component System',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'make test' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'https://github.com/jannesiera/kandinsky.git' },
+18 silly publish   keywords: [ 'entity', 'component', 'system', 'ecs' ],
+18 silly publish   author:
+18 silly publish    { name: 'Janne Siera',
+18 silly publish      email: 'janne@siera.be',
+18 silly publish      url: 'http://twitter.com/jannesiera' },
+18 silly publish   license: 'GNU GPL v2.0',
+18 silly publish   bugs: { url: 'https://github.com/jannesiera/kandinsky/issues' },
+18 silly publish   homepage: 'https://github.com/jannesiera/kandinsky',
+18 silly publish   readme: '# kandinsky\r\nAn Entity Component System in javascript with Node.js\r\n\r\nBased on the articles on http://t-machine.org written by Adam Martin (@t_machine_org) and the Artemis Entity System Framework (http://gamadu.com/artemis)\r\n\r\n## Installation\r\nnpm install kandinsky --save\r\n\r\n## Usage\r\nTODO (will be written soon)\r\n\r\n## Tests\r\nnpm test\r\n\r\nDisclaimer: The entity system hasn\'t been tested AT ALL. Not even on syntax errors. There might be big and small errors breaking the system but they should be easy to fix with some actual testing ("soon").\r\n\r\n## Release history\r\n* 0.0.1 Untested and undocumented codebase.\r\n\r\n## Feature wishlist\r\n* Groups\r\n* Tagging',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '3fb009fd8623f3ed6e65c2212a096ed8c86f20c5',
+18 silly publish   _id: 'kandinsky@0.0.1',
+18 silly publish   _shasum: '2e517a3085e9eaac1c263094f60e07d4a077ddf5',
+18 silly publish   _from: '.' }
+19 silly mapToRegistry name kandinsky
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/kandinsky
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading C:\Users\Janne\AppData\Roaming\npm-cache\kandinsky\0.0.1\package.tgz
+25 verbose request uri https://registry.npmjs.org/kandinsky
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 16:19:39
+28 verbose request id 0798ad7807f901ee
+29 http request PUT https://registry.npmjs.org/kandinsky
+30 http 403 https://registry.npmjs.org/kandinsky
+31 verbose headers { date: 'Fri, 27 Feb 2015 15:19:54 GMT',
+31 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=60',
+31 verbose headers   'content-length': '3199',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   'x-served-by': 'cache-lhr6333-LHR',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1425050393.414705,VS0,VE600',
+31 verbose headers   'keep-alive': 'timeout=10, max=50',
+31 verbose headers   connection: 'Keep-Alive' }
+32 verbose request invalidating C:\Users\Janne\AppData\Roaming\npm-cache\registry.npmjs.org\kandinsky on PUT
+33 error publish Failed PUT 403
+34 verbose stack Error: forbidden cannot modify pre-existing version: 0.0.1
+34 verbose stack old={"name":"kandinsky","version":"0.0.1","description":"An Entity Component System","main":"index.js","scripts":{"test":"make test"},"repository":{"type":"git","url":"https://github.com/jannesiera/kandinsky.git"},"keywords":["entity","component","system","ecs"],"author":{"name":"Janne Siera","email":"janne@siera.be","url":"http://twitter.com/jannesiera"},"license":"GNU GPL v2.0","bugs":{"url":"https://github.com/jannesiera/kandinsky/issues"},"homepage":"https://github.com/jannesiera/kandinsky","gitHead":"3fb009fd8623f3ed6e65c2212a096ed8c86f20c5","_id":"kandinsky@0.0.1","_shasum":"fbc6a32fb504d245f615c30916204a1a0815312c","_from":".","_npmVersion":"2.6.1","_nodeVersion":"0.10.28","_npmUser":{"name":"jannesiera","email":"janne.siera@gmail.com"},"maintainers":[{"name":"jannesiera","email":"janne.siera@gmail.com"}],"dist":{"shasum":"fbc6a32fb504d245f615c30916204a1a0815312c","tarball":"http://registry.npmjs.org/kandinsky/-/kandinsky-0.0.1.tgz"}}
+34 verbose stack new={"name":"kandinsky","version":"0.0.1","description":"An Entity Component System","main":"index.js","scripts":{"test":"make test"},"repository":{"type":"git","url":"https://github.com/jannesiera/kandinsky.git"},"keywords":["entity","component","system","ecs"],"author":{"name":"Janne Siera","email":"janne@siera.be","url":"http://twitter.com/jannesiera"},"license":"GNU GPL v2.0","bugs":{"url":"https://github.com/jannesiera/kandinsky/issues"},"homepage":"https://github.com/jannesiera/kandinsky","readme":"# kandinsky\u000d\u000aAn Entity Component System in javascript with Node.js\u000d\u000a\u000d\u000aBased on the articles on http://t-machine.org written by Adam Martin (@t_machine_org) and the Artemis Entity System Framework (http://gamadu.com/artemis)\u000d\u000a\u000d\u000a## Installation\u000d\u000anpm install kandinsky --save\u000d\u000a\u000d\u000a## Usage\u000d\u000aTODO (will be written soon)\u000d\u000a\u000d\u000a## Tests\u000d\u000anpm test\u000d\u000a\u000d\u000aDisclaimer: The entity system hasn't been tested AT ALL. Not even on syntax errors. There might be big and small errors breaking the system but they should be easy to fix with some actual testing (\"soon\").\u000d\u000a\u000d\u000a## Release history\u000d\u000a* 0.0.1 Untested and undocumented codebase.\u000d\u000a\u000d\u000a## Feature wishlist\u000d\u000a* Groups\u000d\u000a* Tagging","readmeFilename":"README.md","gitHead":"3fb009fd8623f3ed6e65c2212a096ed8c86f20c5","_id":"kandinsky@0.0.1","_shasum":"2e517a3085e9eaac1c263094f60e07d4a077ddf5","_from":".","_npmVersion":"2.6.1","_nodeVersion":"0.10.28","_npmUser":{"name":"jannesiera","email":"janne.siera@gmail.com"},"maintainers":[{"name":"jannesiera","email":"janne.siera@gmail.com"}],"dist":{"shasum":"2e517a3085e9eaac1c263094f60e07d4a077ddf5","tarball":"http://registry.npmjs.org/kandinsky/-/kandinsky-0.0.1.tgz"}}: kandinsky
+34 verbose stack     at CachingRegistryClient.<anonymous> (D:\Programs\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:254:14)
+34 verbose stack     at Request._callback (D:\Programs\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:178:14)
+34 verbose stack     at Request.self.callback (D:\Programs\nodejs\node_modules\npm\node_modules\request\request.js:344:22)
+34 verbose stack     at Request.EventEmitter.emit (events.js:98:17)
+34 verbose stack     at Request.<anonymous> (D:\Programs\nodejs\node_modules\npm\node_modules\request\request.js:1239:14)
+34 verbose stack     at Request.EventEmitter.emit (events.js:117:20)
+34 verbose stack     at IncomingMessage.<anonymous> (D:\Programs\nodejs\node_modules\npm\node_modules\request\request.js:1187:12)
+34 verbose stack     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+34 verbose stack     at _stream_readable.js:919:16
+34 verbose stack     at process._tickCallback (node.js:419:13)
+35 verbose statusCode 403
+36 verbose pkgid kandinsky
+37 verbose cwd D:\Game development\kandinsky
+38 error Windows_NT 6.1.7601
+39 error argv "D:\\Programs\\nodejs\\\\node.exe" "D:\\Programs\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+40 error node v0.10.28
+41 error npm  v2.6.1
+42 error code E403
+43 error forbidden cannot modify pre-existing version: 0.0.1
+43 error old={"name":"kandinsky","version":"0.0.1","description":"An Entity Component System","main":"index.js","scripts":{"test":"make test"},"repository":{"type":"git","url":"https://github.com/jannesiera/kandinsky.git"},"keywords":["entity","component","system","ecs"],"author":{"name":"Janne Siera","email":"janne@siera.be","url":"http://twitter.com/jannesiera"},"license":"GNU GPL v2.0","bugs":{"url":"https://github.com/jannesiera/kandinsky/issues"},"homepage":"https://github.com/jannesiera/kandinsky","gitHead":"3fb009fd8623f3ed6e65c2212a096ed8c86f20c5","_id":"kandinsky@0.0.1","_shasum":"fbc6a32fb504d245f615c30916204a1a0815312c","_from":".","_npmVersion":"2.6.1","_nodeVersion":"0.10.28","_npmUser":{"name":"jannesiera","email":"janne.siera@gmail.com"},"maintainers":[{"name":"jannesiera","email":"janne.siera@gmail.com"}],"dist":{"shasum":"fbc6a32fb504d245f615c30916204a1a0815312c","tarball":"http://registry.npmjs.org/kandinsky/-/kandinsky-0.0.1.tgz"}}
+43 error new={"name":"kandinsky","version":"0.0.1","description":"An Entity Component System","main":"index.js","scripts":{"test":"make test"},"repository":{"type":"git","url":"https://github.com/jannesiera/kandinsky.git"},"keywords":["entity","component","system","ecs"],"author":{"name":"Janne Siera","email":"janne@siera.be","url":"http://twitter.com/jannesiera"},"license":"GNU GPL v2.0","bugs":{"url":"https://github.com/jannesiera/kandinsky/issues"},"homepage":"https://github.com/jannesiera/kandinsky","readme":"# kandinsky\u000d\u000aAn Entity Component System in javascript with Node.js\u000d\u000a\u000d\u000aBased on the articles on http://t-machine.org written by Adam Martin (@t_machine_org) and the Artemis Entity System Framework (http://gamadu.com/artemis)\u000d\u000a\u000d\u000a## Installation\u000d\u000anpm install kandinsky --save\u000d\u000a\u000d\u000a## Usage\u000d\u000aTODO (will be written soon)\u000d\u000a\u000d\u000a## Tests\u000d\u000anpm test\u000d\u000a\u000d\u000aDisclaimer: The entity system hasn't been tested AT ALL. Not even on syntax errors. There might be big and small errors breaking the system but they should be easy to fix with some actual testing (\"soon\").\u000d\u000a\u000d\u000a## Release history\u000d\u000a* 0.0.1 Untested and undocumented codebase.\u000d\u000a\u000d\u000a## Feature wishlist\u000d\u000a* Groups\u000d\u000a* Tagging","readmeFilename":"README.md","gitHead":"3fb009fd8623f3ed6e65c2212a096ed8c86f20c5","_id":"kandinsky@0.0.1","_shasum":"2e517a3085e9eaac1c263094f60e07d4a077ddf5","_from":".","_npmVersion":"2.6.1","_nodeVersion":"0.10.28","_npmUser":{"name":"jannesiera","email":"janne.siera@gmail.com"},"maintainers":[{"name":"jannesiera","email":"janne.siera@gmail.com"}],"dist":{"shasum":"2e517a3085e9eaac1c263094f60e07d4a077ddf5","tarball":"http://registry.npmjs.org/kandinsky/-/kandinsky-0.0.1.tgz"}}: kandinsky
+44 error If you need help, you may report this error at:
+44 error     <http://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]
